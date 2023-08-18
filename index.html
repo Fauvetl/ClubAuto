@@ -27,7 +27,7 @@
 
     <div class="headerAndFooter">
       <div class="bandeaurInfo">
-      <h2 class="titre">CLUB AUTO</h2></div>
+      <h2 class="titre"><strong>CLUB AUTO</strong></h2></div>
         <div id="adresse">
         <img src="images/icone-adresse.png" alt="iconeAdresse"
             height="60" width="60"></span>
@@ -82,48 +82,50 @@
 
           <!-- Partie 3 - articles-->
 
-          <section class="custom-section">
-            <div class="image-column">
-                <img src="./images/clients.jpg" alt="client" class="custom-image">
-            </div>
-            <div class="content-column">
+          <section class="client-section">
+          <img src="./images/clients.jpg" alt="client" class="image-clients">
+          
+            <div class="content-client">
                 <h2><strong>BIENVENUE CHEZ <span class="orange-text">CLUB AUTO</span></strong></h2>
                 <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong></p>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </section>
 
-        <section class="custom-section">
-          <div class="image-column">
+        <section class="entretien-section">
+          <div class="content-entretien">
               <h2><strong>LE MEILLEUR DE L'AUTOMOBILE</strong></h2>
               <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong></p>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul class="bullet">
+                <li class="my-2"><span class="text-danger"><i class="fas fa-check" style="color: #d95000;"></i></span> Lorem ipsum dolor sit amet</li>
+                <li class="my-2"><span class="text-danger"><i class="fas fa-check" style="color: #d95000;"></i></span> Lorem ipsum dolor sit amet</li>
+                <li class="my-2"><span class="text-danger"><i class="fas fa-check" style="color: #d95000;"></i></span> Lorem ipsum dolor sit amet</li>
+                <li class="my-2"><span class="text-danger"><i class="fas fa-check" style="color: #d95000;"></i></span> Lorem ipsum dolor sit amet</li>
+                <li class="my-2"><span class="text-danger"><i class="fas fa-check" style="color: #d95000;"></i></span> Lorem ipsum dolor sit amet</li>
+              </ul>
         </div>
-          <ul class="no-bullet">
-            <li class="my-2"><span class="text-danger"><i class="fas fa-check" style="color: #d95000;"></i></span> Lorem ipsum dolor sit amet</li>
-            <li class="my-2"><span class="text-danger"><i class="fas fa-check" style="color: #d95000;"></i></span> Lorem ipsum dolor sit amet</li>
-            <li class="my-2"><span class="text-danger"><i class="fas fa-check" style="color: #d95000;"></i></span> Lorem ipsum dolor sit amet</li>
-            <li class="my-2"><span class="text-danger"><i class="fas fa-check" style="color: #d95000;"></i></span> Lorem ipsum dolor sit amet</li>
-            <li class="my-2"><span class="text-danger"><i class="fas fa-check" style="color: #d95000;"></i></span> Lorem ipsum dolor sit amet</li>
-          </ul>
-        <div class="image-column">
-            <img src="./images/entretien.jpg" alt="client" class="custom-image">
-        </div>
+            <img src="./images/entretien.jpg" alt="client" class="image-entretien">
       </section>
 
           <!-- Partie 4 - location et achat-->
 
           <div class="background-image">
-            <img src="images/vente-location.jpg" alt="locationEtVente">
-            <h2>Vous souhaitez louer?</h2>
-            <p style="margin-bottom: 10px;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <!-- <img src="images/vente-location.jpg" alt="locationEtVente">-->
+            <div class="content-location">
+              <h4>Vous souhaitez louer?</h4>
+              <p style="margin-bottom: 10px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="content-vente">
+              <h4>Vous souhaitez acheter?</h4>
+              <p style="margin-bottom: 10px">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <h2>Vous souhaitez acheter?</h2>
-            <p style="margin-bottom: 10px;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+            </div>
           </div>
+        </div>
 
           <!-- Partie 5 - qualités commerciales-->
 
@@ -135,29 +137,29 @@
               <div id="icon">
                  <span class="float-start align-middle"><img src="images/icon1.png" alt="icone financement"
                   height="60" width="60"></span>
-                   <p>FINANCEMENT</p>
-                     <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                   <p id="titre">FINANCEMENT</p>
+                     <p id="lorem-tableau" style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                </div>
           
                 <div id="icon">
                       <span class="float-start align-middle"><img src="images/icon2.png" alt="icone réactivité"
                         height="60" width="60"></span>
-                        <p>REACTIVITE DE L'EQUIPE TECHNIQUE</p>
-                        <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p id="titre">REACTIVITE DE L'EQUIPE TECHNIQUE</p>
+                        <p id="lorem-tableau" style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
 
                 <div id="icon">
                     <span class="float-start align-middle"><img src="images/icon3.png" alt="icone ecoute"
                           height="60" width="60"></span>
-                          <p>A l'ECOUTE DE NOTRE CLIENTELE</p>
-                          <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <p id="titre">A l'ECOUTE DE NOTRE CLIENTELE</p>
+                          <p id="lorem-tableau" style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                           </div>
                       
                 <div id="icon">
                       <span class="float-start align-middle"><img src="images/icon4.png" alt="icone service"
                           height="60" width="60"></span>
-                          <p>SERVICE &amp; MAINTENANCE</p>
-                          <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <p id="titre">SERVICE &amp; MAINTENANCE</p>
+                          <p id="lorem-tableau"  style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                           </div>
                     </div>
 
@@ -180,44 +182,48 @@
           <!-- Footer -->
 
           <div class="headerAndFooter">
-              <div class="bandeaurInfo"><h4>CLUB AUTO</h4>
+              <div class="bandeaurInfo"><h5><span class="blue-text"><strong>CLUB</span> AUTO</strong></h5>
                 <div id="clubAuto"></div>
                   <br><p style="margin-bottom: 10px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua.
                   </p>
                 </div>
 
-                <div id="footer"><h4>HORAIRE D'OUVERTURE</h4>
+                <div id="footer"><p><strong>HORAIRE D'OUVERTURE</strong></p>
                   <div id="horaires">
                     <br><p style="margin-bottom: 10px;">
-                      Lundi - Samedi : 9:00 - 17:00
-                      <br> Dimanche et jours fériés: fermé
-                    </p>
+                      Lundi - Samedi :<strong>9:00 - 17:00 </strong> 
+                      <br> Dimanche et jours fériés:<strong>Fermé</strong>
                   </div></div>
 
-                  <div id="footer"><h4>NEWSLETTER</h4>
+                  <div id="footer"><p><strong>NEWSLETTER</strong></p>
                     <div id="newsletter">
                       <p style="margin-bottom: 10px;">
                         <form>
                           <label>
                             <input type="email" name="email" placeholder="Entrez votre email" required>
                           </label>
-                          <i class="fa-solid fa-rss fa-sm" style="color: #ffffff; background-color: #CC6119;"></i>
-                          <p>Inscrivez-vous pour recevoir les dernières offres</p>
+                          <div class="icon-container">
+                            <i class="fa-solid fa-rss fa-sm">
+                          </i></form></p></div>
+                          <p>Inscrivez-vous pour recevoir <br> les dernières offres</p>
                           
                     </div></div>
 
-                  <div  id="footer"><h4>RESEAUX SOCIAUX</h4>
+                  <div  id="footer"><p><strong>RESEAUX SOCIAUX</strong></p>
                     <div id="socialMediaFooter">
-                      <i class="fab fa-facebook"></i>
+                      <i class="fa-brands fa-facebook-f"></i>
                       <i class="fab fa-twitter"></i>
+                      <i class="fab fa-instagram"></i>
                       <i class="fa-brands fa-google-plus-g"></i>
                       <i class="fa-brands fa-youtube"></i>
                      </div>
                     </div>
                   </div>
 
-                  <div class="center-text">
+                  <div class="line"></div>
+
+                  <div id="copyright">
                     <p> Copyright &copy; Club Auto - Tous droits réservés </p>
                   </div>
             
