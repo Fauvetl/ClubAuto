@@ -111,7 +111,6 @@ ul.mainNav li a {
   padding: 20px; 
   margin-right: 17px;
   transition: background-color 0.3s;
-
 }
 
 ul.mainNav li a:hover {
@@ -119,52 +118,10 @@ ul.mainNav li a:hover {
   color: var(--white);
 }
 
-.background-image {
-  position: sticky;
+.background-image-cars {
+  position: relative;
   overflow: hidden;
   height: 50vh;
-  z-index: 1;
-}
-
-.background-image img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: flex-start; 
-}
-
-.content-location{
-  background-color: var(--orange);
-  padding: 20px;
-  opacity: 0.7;
-}
-
-.content-vente{
-  background-color: var(--red);
-  padding: 20px;
-  opacity: 0.7;
-}
-
-.content-location,
-.content-vente {
-  display: flex;
-    flex: 1;
-    padding: 30px;
-    gap: 30px;}
-
-.content-location h4,
-.content-vente h4 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: black
-}
-
-.content-location p,
-.content-vente p {
-    margin: 0;
-    color: var(--white);
-    font-size: 15px;
 }
 
 .bandeau{
@@ -174,13 +131,17 @@ ul.mainNav li a:hover {
   padding-left: 100px;
 }
 
+.orange-text {
+  color: darkorange;
+}
 .client-section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: white;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-right: 120px;
 }
 
 .entretien-section {
@@ -193,37 +154,156 @@ ul.mainNav li a:hover {
   padding-left: 100px;
 }
 
-
 .content.client{
-  padding: 0;
-  margin-left: 10%;
+  padding: 30px;
+  padding-right: 70px;
 }
 
 .image-clients {
   width: 50%;
   padding: 30px;
+  padding-left: 130px;
 }
 
 .image-entretien {
   width: 50%;
   padding: 30px;
+  padding-right: 130px;
 }
 
 .content-entretien{
-padding: 30px;
+  padding: 30px;
+  padding-right: 70px;
 }
 
 .bullet {
   list-style-type: none;
 }
 
-.orange-text {
-  color: darkorange;
+.background-image {
+  position: relative;
+  overflow: hidden;
+  height: 50vh;
+  z-index: 1;
+}
+
+.background-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container-location-vente {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.content-location {
+  flex: 1;
+  padding: 30px;
+  background-color: rgba(255, 165, 0, 0.6);
+  margin: 10%;
+  z-index: 3;
+  position: relative;
+}
+
+.content-vente {
+  flex: 1;
+  padding: 30px;
+  background-color: rgba(255, 0, 0, 0.6);
+  margin: 10%;
+  z-index: 3;
+  position: relative;
+}
+
+.content-location h4,
+.content-vente h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: black;
+  opacity: 1;
+}
+
+.content-location p,
+.content-vente p {
+  margin: 0;
+  color: white;
+  font-size: 15px;
+  opacity: 1;
+}
+
+
+.content-location,
+.content-vente {
+    flex: 1;
+    padding: 30px;
+    gap: 30px;
+    position: relative;
+  }
+
+.content-location h4,
+.content-vente h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: black
+    opacity: 1;
+}
+
+.content-location p,
+.content-vente p {
+    margin: 0;
+    color: var(--white);
+    font-size: 15px;
+    opacity: 1;
+}
+
+.vehiculesrecents {
+  background-color: var(--black);
+}
+
+.vehiculesrecents {
+  background-color: var(--black);
+  text-align: center;
+}
+
+.vehicules-title {
+  padding: 30px;
+  color: var(--white);
+}
+
+.container-carrousel {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+}
+
+.carrousel-item1,
+.carrousel-item2,
+.carrousel-item3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%; 
+  color: white; 
+}
+
+.carrousel-item1 img,
+.carrousel-item2 img,
+.carrousel-item3 img {
+  width: 100%;
+  max-width: 100%;
 }
 
 .center-text {
   text-align: center;
-  padding: 50px;
+  padding: 10px;
 }
 
 #tableau {
@@ -234,7 +314,7 @@ padding: 30px;
 
 #icon {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
   flex: 2;
   padding: 30px;
   display: flex;
@@ -262,6 +342,7 @@ padding: 30px;
     cursor: pointer;
     font-size: 13px;
     font-weight: bold;
+    margin-bottom: 40px;
 
   }
 
