@@ -24,6 +24,7 @@
 
 .p {
   font-family: 'Open-sans', sans-serif;
+  font-size: 12px;
 }
 
 .headerAndFooter {
@@ -118,12 +119,6 @@ ul.mainNav li a:hover {
   color: var(--white);
 }
 
-.background-image-cars {
-  position: relative;
-  overflow: hidden;
-  height: 50vh;
-}
-
 .bandeau{
   background-color: var(--black);
   color: var(--white);
@@ -154,7 +149,7 @@ ul.mainNav li a:hover {
   padding-left: 100px;
 }
 
-.content.client{
+.content-client{
   padding: 30px;
   padding-right: 70px;
 }
@@ -185,6 +180,14 @@ ul.mainNav li a:hover {
   overflow: hidden;
   height: 50vh;
   z-index: 1;
+}
+
+.background-image-cars {
+  position: relative;
+  overflow: hidden;
+  height: 50vh;
+  z-index: 1;
+  transform: translateY(50%);
 }
 
 .background-image img {
@@ -271,6 +274,7 @@ ul.mainNav li a:hover {
 .vehiculesrecents {
   background-color: var(--black);
   text-align: center;
+  height: 45vh;
 }
 
 .vehicules-title {
@@ -283,9 +287,9 @@ ul.mainNav li a:hover {
 .container-carrousel {
   display: flex;
   justify-content: center; 
-  gap: 20px;
+  gap: 30px;
   border-top: 2px solid var(--orange);
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -295,9 +299,8 @@ ul.mainNav li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%; 
   color: white; 
-  margin: 40px;
+  margin-top: 40px;
 }
 
 .carrousel-item1 img,
@@ -310,6 +313,12 @@ ul.mainNav li a:hover {
   margin-bottom: 10px;
 }
 
+.titre-vehicules p {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .container-text {
   display: flex;
   background-color: rgba(236, 239, 243, 0.1);
@@ -319,34 +328,25 @@ ul.mainNav li a:hover {
 }
 
 .container-text span {
-  font-size: 12px;
   text-align: left;
-  flex: 1;
   font-weight: bold;
-  padding-left: -90px;
 }
 
 .container-text p {
+  height: 4vh;
+  width: 8vh;
   margin: 2px;
   background-color: var(--blue);
-  flex: 2;
-  text-align: center;
-  font-size: 12px;
   font-weight: bold;
-  padding: 5px
+
 }
 
-.barré span {
+.barré del {
   text-align: center;
   color: black;
   text-decoration: line-through;
   display: flex;
   background-color: var(--blue);
-  margin-bottom: -10px;
-  padding-top: 2px;
-  padding-right: -2px;
-  padding-left: 7px;
-  font-size: 10px;
 }
 
 .center-text {
@@ -396,6 +396,15 @@ ul.mainNav li a:hover {
 
   .blue-text {
     color: var(--blue);
+  }
+
+  .white-text {
+    color:var(--white);
+  }
+
+  .vente-location-text {
+    color:var(--black);
+    font-size: 12px;
   }
 
   .icon-container {
