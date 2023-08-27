@@ -6,7 +6,7 @@
   --orange: #FAB637; 
   --red: #FF4848;
   --marron: #CC6119;
-  --gray: #ECEFF3;
+  --grey: #ECEFF3;
   --darkgrey: #464e53;
   --white: #FFFFFF;
   --blue: #6C98E1;
@@ -96,7 +96,7 @@ ul.mainNav{
   list-style: none;
   margin : 0 0 0;
   padding: 20px 160px;
-  background-color: var(--middlegrey); 
+  background-color: var(--grey); 
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -179,15 +179,7 @@ ul.mainNav li a:hover {
   position: relative;
   overflow: hidden;
   height: 50vh;
-  z-index: 1;
-}
-
-.background-image-cars {
-  position: relative;
-  overflow: hidden;
-  height: 50vh;
-  z-index: 1;
-  transform: translateY(50%);
+  z-index: -1;
 }
 
 .background-image img {
@@ -199,6 +191,81 @@ ul.mainNav li a:hover {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.background-image-cars {
+  position: relative;
+  overflow: hidden;
+  height: 20vh;
+  z-index: 1;
+}
+
+.background-image-cars img {
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#pageContent.contact {
+  position: relative;
+  z-index: 2;
+}
+
+#pageContent.contact form input{
+  background-color: var(--grey);
+  border: var(--grey);
+  font-size: 12px;
+  padding: 10px;
+  padding-right: 50px;
+}
+
+#pageContent.contact form{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex: 1;
+  padding: 30px;
+  background-color: var(--white);
+  margin: 10%;
+  z-index: 3;
+  border: 1px solid var(--grey);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#pageContent.contact h2 {
+  margin: 20px 0;
+}
+
+#pageContent.contact form > div > div {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#pageContent.contact form label{
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+#pageContent.contact form textarea {
+  height: 150px;
+  resize: none;
+  background-color: var(--grey);
+  border: var(--grey);
+  z-index: 2;
+  font-size: 12px;
+  padding: 20px;
+  padding-right: 150px;
+}
+#pageContent.contact form button {
+  align-self: flex-end;
+}
+
+#pageContent {
+  background-color: var(--grey);
 }
 
 .container-location-vente {
@@ -424,12 +491,12 @@ ul.mainNav li a:hover {
 }
 
 .line {
-  border-top: 0.5px solid var(--white);
+  border-top: 0.5px solid var(--middlegrey);
 }
 
   #copyright {
     background-color: #232628;
     text-align: center;
-    color: var(--white);
+    color: var(--middlegrey);
     padding: 20px
   }
