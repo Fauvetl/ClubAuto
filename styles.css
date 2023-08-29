@@ -32,8 +32,9 @@
   color: white;
   padding: 20px 0 0 150px;
   display: flex;
-  justify-content: center, space-between;
-  align-items: center, top;
+  flex-direction: row;
+  justify-content: space-evenly;
+
   gap: 40px;
 }
 
@@ -500,3 +501,40 @@ ul.mainNav li a:hover {
     color: var(--middlegrey);
     padding: 20px
   }
+
+  /* VENTE/LOCATION */
+
+  .banner-vente  {
+    position: relative;
+    overflow: hidden;
+    height: 15vh;
+    background-position: center;
+}
+
+.title-vente {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: white;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.img-vente {
+    width: 100%;
+    position: relative;
+    top: -370px; 
+    translate : 0 -10%;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.bg-bbutton {
+  background-color: rgb(68, 158, 231); 
+  color: white; 
+  padding: 10px 20px; /* Marge interne du bouton */
+  border: none; /* Supprime les bordures du bouton */
+  cursor: pointer; /* Curseur de la souris en pointeur au survol */
+}

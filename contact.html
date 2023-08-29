@@ -58,12 +58,12 @@
         </div>
 
 
-    <ul class="mainNav">
-      <li><a href="index.html" title="Vers la page d'accueil du site 'Club Auto'">ACCUEIL</a></li>
-      <li><a href="ventes.htm" title="Vers la page ventes de ce site">VENTE</a></li>
-      <li><a href="locations.html" title="Vers la page locations de ce site">LOCATION</a></li>
-      <li><a href="contact.html" title="Vers la page Contact de ce site">CONTACT</a></li>
-  </ul>
+        <ul class="mainNav">
+          <li><a href="./index.html" title="Vers la page d'accueil du site 'Club Auto'">ACCUEIL</a></li>
+          <li><a href="./vente.html" title="Vers la page ventes de ce site">VENTE</a></li>
+          <li><a href="./location.html" title="Vers la page locations de ce site">LOCATION</a></li>
+          <li><a href="./contact.html" title="Vers la page Contact de ce site">CONTACT</a></li>
+      </ul>
  
           <!-- Début de la Landing Page -->
           <main>
@@ -75,8 +75,8 @@
             <section id="pageContent" class="oneCol contact">
               <main>
                   <form id="frmContact" action="merci.html">
-                    <h2>CONTACTEZ NOUS</h2>
                       <div>
+                        <h2>CONTACTEZ NOUS</h2>
                           <div class="nom">
                               <label for="fName">Prénom*</label>
                               <input type="text" name="fName" id="fName" placeholder="Entrez votre prénom" required autofocus />
@@ -123,19 +123,18 @@
                     <br> Dimanche et jours fériés:<strong>Fermé</strong>
                 </div></div>
 
-                <div id="footer"><p><strong>NEWSLETTER</strong></p>
-                  <div id="newsletter">
-                    <p style="margin-bottom: 10px;">
-                      <form>
-                        <label>
-                          <input type="email" name="email" placeholder="Entrez votre email" required>
-                        </label>
-                        <div class="icon-container">
-                          <i class="fa-solid fa-rss fa-sm">
-                        </i></form></p></div>
-                        <p>Inscrivez-vous pour recevoir <br> les dernières offres</p>
-                        
-                  </div></div>
+                <div class="newsletter">
+                  <div class="newsletter-container">
+                      <label for="email" style="margin-bottom: 10px;">
+                          <strong>NEWSLETTER</strong>
+                      </label>
+                      <div class="input-group">
+                          <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" class="form-control rounded-0" required>
+                          <span class="input-group-text rounded-0" style= "background-color: orange;"><i class="fa-solid fa-rss"></i></span>
+                      </div>
+                      <p class="text-secondary">Inscrivez-vous pour recevoir les dernières offres</p>
+                  </div>
+              </div>
 
                 <div  id="footer"><p><strong>RESEAUX SOCIAUX</strong></p>
                   <div id="socialMediaFooter">
